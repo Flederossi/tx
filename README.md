@@ -3,12 +3,12 @@ A tiny hex dump written to be compact.
 
 ## Usage
 ```
-tx [filename]
+$ tx [filename]
 ```
 
 ## Example
 ```
-tx example.txt
+$ tx example.txt
 ```
 ```
 54 68 69 73 20 69 73 20 61 6e 20 65 78 61 6d 70 | This.is.an.examp
