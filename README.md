@@ -1,6 +1,11 @@
 # tx
 A tiny hex dump written to be compact.
 
+## Compile
+To compile tx use:
+
+
+
 ## Usage
 ```
 $ tx [filename]
