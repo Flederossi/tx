@@ -4,7 +4,9 @@ A tiny hex dump written to be compact.
 ## Compile
 To compile tx use:
 
-
+```
+$ gcc src/main.c -o tx
+```
 
 ## Usage
 ```
