@@ -7,7 +7,7 @@ int main(int argc, char *argv[]){
 	char cb[CW];
 
 	if (fp != NULL){
-		while (1){
+		while (!b){
 			if ((c = fgetc(fp)) == EOF){
 				while (cc < CW){
 					printf("-- ");
@@ -23,18 +23,13 @@ int main(int argc, char *argv[]){
 				cc = 0;
 				printf("| ");
 				for (int i = 0; i < CW; i++){
-					if (cb[i] > 32 && cb[i] < 128){
-						printf("%c", cb[i]);
-					}else{
-						printf(".");
-					}
+					if (cb[i] > 32 && cb[i] < 128) printf("%c", cb[i]);
+					else printf(".");
 				}
 				printf("\n");
 			}
-			if (b) break;
 		}
+		fclose(fp);
 	}
-
-	fclose(fp);
 	return 0;
 }
