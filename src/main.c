@@ -15,17 +15,14 @@ int main(int argc, char *argv[]){
 				}
 				b = 1;
 			}else{
-				if (c < 16) printf("0");
-				printf("%x ", c);
+				(c < 16) ? printf("0%x ", c) : printf("%x ", c);
 				cb[cc++] = c;
 			}
 			if (cc > CW - 1){
 				cc = 0;
 				printf("| ");
-				for (int i = 0; i < CW; i++){
-					if (cb[i] > 32 && cb[i] < 128) printf("%c", cb[i]);
-					else printf(".");
-				}
+				for (int i = 0; i < CW; i++)
+					(cb[i] > 32 && cb[i] < 128) ? printf("%c", cb[i]) : printf(".");
 				printf("\n");
 			}
 		}
